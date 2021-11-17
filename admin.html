@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎用户登录</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>欢迎管理员登录</title>
+    <link rel="stylesheet" href="./css/admin.css">
     <script>
         window.addEventListener("DOMContentLoaded", function () {
             var a1 = document.getElementById("a1");
@@ -29,7 +29,7 @@
                     x = 20 + (i * 30);
                     y = 25 + Math.ceil(Math.random() * 20);
                     fontSize = 10 + Math.ceil(Math.random() * 20);
-                    cxt.font = "bold " + fontSize + "px Arial";
+                    cxt.font = "bold " + fontSize + "px Arial"; 
                     position = Math.ceil(Math.random() * 1000) % 36;
                     cxt.fillText(str.substr(position, 1), x, y, 300);
                 }
@@ -56,7 +56,7 @@
         </div>
     </header>
     <article id="middle">
-        <h1>用户登录</h1>
+        <h1>管理员登录</h1>
         <section id="content">
             <div id="content1">
                 <span>用户名：</span>
@@ -67,7 +67,6 @@
                 <canvas id="yzm" width="150" height="50"></canvas>
                 <br>
                 <input type="text" id="c2" class="text"><br>
-                <input type="checkbox" name="" id="ck">十天免登录
                 <input type="button" name="" id="sub" value="登录">
             </div>
         </section>
